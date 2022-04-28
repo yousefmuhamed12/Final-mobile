@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     android:background="@color/g">
 
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458" />
+
     <ImageView
         android:layout_width="366dp"
         android:layout_height="238dp"
@@ -73,29 +89,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.72" />
 
+
     <Button
         android:id="@+id/Order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
-        android:text="Order"
-        android:onClick="move"
-        android:textStyle="italic"
-        android:textColor="@color/g"
         android:layout_marginBottom="192dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/black"
-        />
-
+        android:onClick="move"
+        android:text="Order"
+        android:textColor="@color/g"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
+        android:id="@+id/Logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
         android:text="Log out"
         android:backgroundTint="@color/black"
+        android:onClick="logout"
 
         android:textStyle="italic"
         android:textColor="@color/g"
@@ -103,11 +120,13 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="112dp"
         android:text="Submit"
+        android:onClick="feed"
         android:backgroundTint="@color/black"
         android:textColor="@color/g"
         android:textStyle="italic"

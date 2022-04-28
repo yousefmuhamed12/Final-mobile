@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,14 +28,22 @@ public class Menu extends AppCompatActivity {
         rv.setLayoutManager(new LinearLayoutManager(this));
 
         b = findViewById(R.id.button);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_ty);
+            }
+        });
 
 
     }
 
-    public void display(View v) {
+
+   // public void display(View v) {
         // final Toast toast;
         // shows message to the user
-        Toast.makeText(Menu.this, "Added!", Toast.LENGTH_SHORT).show();
 
-    }
+      //  Toast.makeText(Menu.this, "Added!", Toast.LENGTH_SHORT).show();
+
+   // }
 }

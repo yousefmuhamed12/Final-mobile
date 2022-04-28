@@ -16,22 +16,25 @@
         android:textStyle="bold"
         android:layout_margin="58dp"
         android:gravity="center"/>
+
     <EditText
+        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
         android:layout_below="@+id/signin"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
         android:background="#38ffffff"
-        android:hint="Username"
-        android:textColorHint="@color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_margin="18dp"
-        android:padding="28dp"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:drawablePadding="20dp"
-        />
+        android:hint="Username"
+        android:padding="28dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,6 +76,7 @@
         android:layout_marginBottom="169dp"
         android:backgroundTint="@color/black"
         android:text="Signup"
+        android:onClick="signup"
         android:textColor="@color/g"
         android:textStyle="normal" />
 
